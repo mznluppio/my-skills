@@ -30,7 +30,7 @@ run_step "Installation des skills PM (pm-toolkit, strategy, etc.)" \
   "npx -y skills add phuryn/pm-skills --skill '*' -g -y -a claude-code -a codex -a opencode"
 
 # 2. React, Next.js & Design (vercel-labs/agent-skills)
-for skill in react-best-practices web-design-guidelines; do
+for skill in vercel-react-best-practices web-design-guidelines; do
     run_step "Installation de $skill (vercel-labs)" \
       "npx -y skills add vercel-labs/agent-skills@$skill -g -y -a claude-code -a codex -a opencode"
 done
