@@ -1,6 +1,6 @@
 ---
 name: fr-style
-description: Améliore le style des textes rédigés en français en chassant les anglicismes, calques syntaxiques et tournures lourdes typiques d'une rédaction influencée par l'anglais ou par l'écriture générée par IA. À utiliser pour tout texte français destiné à être publié, soutenu, ou envoyé dans un cadre professionnel ou académique : articles, mémoires, thèses, posts, emails formels, briefs. Couvre les anglicismes lexicaux ("basé sur", "supporter", "réaliser"), les calques syntaxiques ("en termes de", "à travers"), les patterns d'écriture IA en français, et les marqueurs de discours à privilégier. Use this skill whenever the user writes, edits, or refines French content — even casual or short pieces.
+description: Améliore le style des textes rédigés en français en chassant les anglicismes, calques syntaxiques et tournures lourdes. À utiliser pour tout texte français destiné à être publié, soutenu, ou envoyé dans un cadre professionnel ou académique (articles, mémoires, thèses, posts, emails formels, briefs). Couvre les anglicismes lexicaux (basé sur, supporter, réaliser), les calques syntaxiques (en termes de, à travers), les patterns d'écriture IA en français, et les marqueurs de discours à privilégier. Use this skill whenever the user writes, edits, or refines French content.
 ---
 
 # Style français : anti-anglicismes et tournures soignées
