@@ -7,6 +7,7 @@ BLUE='\033[0;34m'
 YELLOW='\033[1;33m'
 RED='\033[0;31m'
 NC='\033[0m' # No Color
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 
 echo -e "${BLUE}=====================================================${NC}"
 echo -e "${BLUE}     Mise à jour globale des compétences (Skills)     ${NC}"
@@ -79,9 +80,12 @@ run_step "Configuration de Deep Research (git clone & copy)" \
    cp -R /tmp/deep-research/agents/web-search-modules ~/.config/opencode/agents/ || true && \
    rm -rf /tmp/deep-research"
 
-# 10. Vos compétences personnalisées (mznluppio/my-skills)
+# 10. Commandes OpenCode pour rendre les UI skills visibles dans la palette /
+run_step "Installation des commandes OpenCode pour UI Skills" \
+  "mkdir -p ~/.config/opencode/commands && cp \"$SCRIPT_DIR\"/opencode-commands/*.md ~/.config/opencode/commands/"
+
+# 11. Vos compétences personnalisées (mznluppio/my-skills)
 # En local, on peut installer depuis le répertoire courant
-SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 run_step "Installation de VOS compétences personnalisées (depuis ce répertoire)" \
   "npx -y skills add \"$SCRIPT_DIR\" --skill '*' -g -y -a claude-code -a codex -a opencode"
 
