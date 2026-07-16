@@ -81,7 +81,7 @@ run_step "Configuration de Deep Research (git clone & copy)" \
 
 # 10. Vos compétences personnalisées (mznluppio/my-skills)
 # En local, on peut installer depuis le répertoire courant
-SCRIPT_DIR=\"$( cd \"$( dirname \"${BASH_SOURCE[0]}\" )\" &> /dev/null && pwd )\"
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 run_step "Installation de VOS compétences personnalisées (depuis ce répertoire)" \
   "npx -y skills add \"$SCRIPT_DIR\" --skill '*' -g -y -a claude-code -a codex -a opencode"
 
